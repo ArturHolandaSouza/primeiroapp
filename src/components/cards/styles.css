@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #000;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family:Kdam Thmor Pro, sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url(https://wallpapercave.com/wp/wp5784416.jpg);
+}
+
+.banner-2 {
+    background-image: url(https://ovicio.com.br/wp-content/uploads/2021/12/20211220-ovicio-batman-mulher-gato-zoe-kravitz.jpg);
+}
+
+.banner-3 {
+    background-image: url(https://i.pinimg.com/originals/95/c4/65/95c4654db07456e6b9a3640253cd76a9.jpg);
+}
+
+@media(max-width: 768px) {
+    .cards-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 480px) {
+    .cards-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
